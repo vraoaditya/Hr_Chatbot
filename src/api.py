@@ -24,8 +24,8 @@ vector_store = FAISS.load_local("faiss_index", embeddings, allow_dangerous_deser
 retriever = vector_store.as_retriever()
 
 # Initialize the Groq LLM
-#llm = ChatGroq(model_name="mixtral-8x7b-32768", api_key=groq_api_key)
-llm = ChatGroq(model_name="llama-3.1-8b-instant", api_key=groq_api_key)
+llm = ChatGroq(model_name="mixtral-8x7b-32768", api_key=groq_api_key)
+#llm = ChatGroq(model_name="llama-3.1-8b-instant", api_key=groq_api_key)
 # Define the prompt template
 prompt = ChatPromptTemplate.from_template(
     """
