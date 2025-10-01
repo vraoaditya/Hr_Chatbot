@@ -1,0 +1,12 @@
+# requirements.txt
+pypdf
+langchain
+faiss-cpu
+sentence-transformers
+groq
+fastapi
+uvicorn
+streamlit
+python-dotenv
+langchain_community
+langchain_groq
